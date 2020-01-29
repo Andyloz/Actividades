@@ -28,14 +28,11 @@ public class Ejercicio3 {
         Random random = new Random();
         array[random.nextInt(array.length)] = 6.3;
         
-        for (double d : array) {
-            System.out.println(d);
-        }
+        // Imprmir arrays
+        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(array2));
         
-        for (double d : array2) {
-            System.out.println(d);
-        }
-        
+        // Comparar ambos arrays
         System.out.println(array.equals(array2));
     }
 }
