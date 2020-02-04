@@ -14,7 +14,7 @@ import java.util.Scanner;
  *
  * @author andyloz
  */
-public class Ejercicio7 {
+public class Ejercicio07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();

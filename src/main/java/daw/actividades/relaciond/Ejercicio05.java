@@ -9,6 +9,6 @@ package daw.actividades.relaciond;
  *
  * @author andyloz
  */
-public class Ejercicio5 {
+public class Ejercicio05 {
     
 }

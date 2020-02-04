@@ -11,7 +11,7 @@ import java.util.Arrays;
  *
  * @author andyloz
  */
-public class Ejercicio6 {
+public class Ejercicio06 {
     
     static String arraysToString(int[] array1, int[] array2) {
         int aux[][] = {array1, array2};

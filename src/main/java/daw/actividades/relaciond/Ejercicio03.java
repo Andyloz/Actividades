@@ -12,7 +12,7 @@ import java.util.Random;
  *
  * @author lozan
  */
-public class Ejercicio3 {
+public class Ejercicio03 {
     public static void main(String[] args) {
         double array[] = new double[20];
         
