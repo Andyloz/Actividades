@@ -5,6 +5,7 @@
  */
 package daw.actividades.relaciond;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
@@ -21,14 +22,14 @@ public class Ejercicio7 {
         
         // Pedir longitud de arrays
         System.out.print("Longitud de arrays: ");
-        System.out.println();
         do {
             try {
                 longArrays = sc.nextInt();
+                sc.nextLine();
             } catch (InputMismatchException e) {
                 System.out.print("Introduzca un número válido: ");
             }
-        } while (longArrays > 0);
+        } while (longArrays <= 0);
         System.out.println();
         
         // Inicializar arrays
@@ -36,12 +37,13 @@ public class Ejercicio7 {
         int array2[] = new int[longArrays];
         
         // Rellenar de números los arrays
-        for (int i : array1) {
-            i = random.nextInt(99)+1;
-            System.out.println(i);
+        for (int i = 0; i < array1.length; i++) {
+            array1[i] = random.nextInt(99)+1;
+            array2[i] = random.nextInt(99)+1;
         }
-        for (int i : array2) {
-            i = random.nextInt(99)+1;
-        }
+        
+        // Imprimir arrays
+        System.out.println(Arrays.toString(array1));
+        System.out.println(Arrays.toString(array2));
     }
 }
