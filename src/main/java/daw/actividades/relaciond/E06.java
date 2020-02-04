@@ -11,9 +11,9 @@ import java.util.Arrays;
  *
  * @author andyloz
  */
-public class Ejercicio06 {
+public class E06 {
     
-    static String arraysToString(int[] array1, int[] array2) {
+    private static String arraysToString(int[] array1, int[] array2) {
         int aux[][] = {array1, array2};
         String msg = "";
         for (int[] array : aux) {
@@ -28,7 +28,7 @@ public class Ejercicio06 {
         } return msg;
     }
     
-    static void compararArrays(int[] array1, int[] array2) {
+    private static void compararArrays(int[] array1, int[] array2) {
         String msg = arraysToString(array1, array2);
         
         if (Arrays.equals(array1, array2)) {
@@ -38,7 +38,7 @@ public class Ejercicio06 {
         }
     }
     
-    static void compararArraysManual(int[] array1, int[] array2) {
+    private static void compararArraysManual(int[] array1, int[] array2) {
         String msg = arraysToString(array1, array2);
         
         if (array1.length == array2.length) {

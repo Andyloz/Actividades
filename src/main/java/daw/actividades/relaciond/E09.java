@@ -12,8 +12,8 @@ import java.util.Random;
  *
  * @author andyloz
  */
-public class Ejercicio09 {
-    static void sequentialSearch(int array[], int search) {
+public class E09 {
+    private static void sequentialSearch(int array[], int search) {
         for (int i : array) {
             if (i == search) {
                 System.out.println("Encontrado!!");
@@ -23,7 +23,7 @@ public class Ejercicio09 {
         System.out.println("No se ha encontrado.");
     }
     
-    static void ordenarBubble(int[] arrayOrdenar) {
+    private static void ordenarBubble(int[] arrayOrdenar) {
         int tmp;
         for (int i = 0; i < arrayOrdenar.length - 1; i++)
             for (int j = i + 1; j < arrayOrdenar.length; j++)
@@ -58,6 +58,6 @@ public class Ejercicio09 {
         };
         
         ordenarBubble(array2);
-        System.out.println(Arrays.toString(array2));
+        System.out.println("Ordenar Bubble: "+Arrays.toString(array2));
     }
 }

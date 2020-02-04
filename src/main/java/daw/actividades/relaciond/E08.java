@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author andyloz
  */
-public class Ejercicio08 {
+public class E08 {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);

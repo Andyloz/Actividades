@@ -14,7 +14,7 @@ import java.util.Scanner;
  *
  * @author andyloz
  */
-public class Ejercicio07 {
+public class E07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
@@ -42,8 +42,15 @@ public class Ejercicio07 {
             array2[i] = random.nextInt(99)+1;
         }
         
+        int array1ByArray2[] = new int[longArrays];
+        // Multiplicar valores de arrays
+        for (int i = 0; i < array1.length; i++) {
+            array1ByArray2[i] = array1[i] * array2[i];
+        }
+        
         // Imprimir arrays
         System.out.println(Arrays.toString(array1));
         System.out.println(Arrays.toString(array2));
+        System.out.println(Arrays.toString(array1ByArray2));
     }
 }

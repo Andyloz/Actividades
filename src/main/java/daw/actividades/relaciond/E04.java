@@ -11,8 +11,8 @@ import java.util.Arrays;
  *
  * @author andyloz
  */
-public class Ejercicio4 {
-    static void sequentialSearch(int array[], int search) {
+public class E04 {
+    private static void sequentialSearch(int array[], int search) {
         for (int i : array) {
             if (i == search) {
                 System.out.println("Encontrado!!");

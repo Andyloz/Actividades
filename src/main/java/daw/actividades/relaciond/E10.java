@@ -6,13 +6,14 @@
 package daw.actividades.relaciond;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  *
  * @author andyloz
  */
-public class Ejercicio04 {
-    static void sequentialSearch(int array[], int search) {
+public class E10 {
+    private static void sequentialSearch(int array[], int search) {
         for (int i : array) {
             if (i == search) {
                 System.out.println("Encontrado!!");
@@ -20,6 +21,10 @@ public class Ejercicio04 {
             }
         }
         System.out.println("No se ha encontrado.");
+    }
+    
+    private static void ordenarQuick(int[] arrayOrdenar) {
+        Arrays.sort(arrayOrdenar);
     }
     
     public static void main(String[] args) {
@@ -33,5 +38,18 @@ public class Ejercicio04 {
         } else {
             System.out.println("[Clase Arrays] No se ha encontrado.");
         }
+        
+        // Ordenar quick
+        Random random = new Random();
+        int array2[] = {
+            random.nextInt(19)+1,
+            random.nextInt(19)+1,
+            random.nextInt(19)+1,
+            random.nextInt(19)+1,
+            random.nextInt(19)+1
+        };
+        
+        ordenarQuick(array2);
+        System.out.println("Ordenar quick: "+Arrays.toString(array2));
     }
 }
